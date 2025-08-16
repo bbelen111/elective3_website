@@ -6,9 +6,49 @@
 <body>
     <%- include('./partials/navbar.ejs') %>
     
-    <div class="container mt-4">
-        <h1><%= heading %></h1>
-        <p>Example lng ni</p>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="container text-center mt-5" style="margin: 40px;">
+            <h1><%= heading %></h1>
+            <p class="fs-4">Any further questions or feedback? Feel free to send one using the form below.</p>
+            <hr>
+            
+            <div class="border border-success rounded p-4 mb-4 border-4">
+                <h3>Contact Information</h3>
+                <p class="fs-4">
+                    Email: <a href="support@farmersmarket.com">support@farmersmarket.com</a><br>
+                    Phone: +63 912 345 6789
+                </p>
+            </div>
+            
+            <div class="border border-success rounded p-4 mb-4 border-4">
+                <h3>Send Us a Message</h3>
+                <form class="text-start mx-auto" style="max-width: 500px;">
+                    <div class="mb-3">
+                        <label for="name" class="form-label fs-5">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fs-5">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="your@email.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label fs-5">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success fs-5">Send</button>
+                </form>
+            </div>
+            
+            <div class="border border-success rounded p-4 mb-4 border-4">
+                <h3>Location</h3>
+                <p class="fs-4">
+                    Farmer's Market HQ<br>
+                    123 Somewhere, Everywhere, Hello
+                </p>
+            </div>
+        </div>
     </div>
 
-<%- include('./partials/footer.ejs') %>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

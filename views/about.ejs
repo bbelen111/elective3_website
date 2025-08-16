@@ -6,9 +6,41 @@
 <body>
     <%- include('./partials/navbar.ejs') %>
     
-    <div class="container mt-4">
-        <h1><%= heading %></h1>
-        <p>Example lng ni</p>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="container text-center mt-5" style="margin: 40px;">
+            <h1><%= heading %></h1>
+            <p class="fs-4">Empowering farmers with a simple, eco-friendly way to manage seedling inventory.</p>
+            <hr>
+            
+            <div class="border border-success rounded p-4 mb-4 border-4">
+                <h3>Our Mission</h3>
+                <p class="fs-4">
+                    We aim to support sustainable agriculture by providing farmers with
+                     an easy-to-use inventory system for tracking seedlings, promoting growth, and reducing waste.
+                </p>
+            </div>
+            
+            <div class="border border-success rounded p-4 mb-4 border-4">
+                <h3>Features</h3>
+                <div class="d-flex justify-content-center align-items-center">
+                    <ul class="list-unstyled text-start">
+                        <li class="fs-4">🌱 Track seedling types and quantities</li>
+                        <li class="fs-4">📊 View inventory analytics</li>
+                        <li class="fs-4">🔔 Get reminders for planting and harvesting</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border border-success rounded p-4 mb-4 border-4">
+                <h3>Who We Serve</h3>
+                <p class="fs-4">
+                    Our platform is designed for farmers and agricultural groups who want 
+                    to embrace technology and eco-friendly practices.
+                </p>
+            </div>
+        </div>
     </div>
 
-<%- include('./partials/footer.ejs') %>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
