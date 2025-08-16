@@ -2,17 +2,13 @@
 <html>
 <head>
     <%- include('./partials/head.ejs') %>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8" />
-    <title>Home</title>
 </head>
 <body>
-    <h1><%= heading %></h1>
-    <% let name= "John Doe"; %>
-    <h2>My name is <%= name %></h2>
-    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-</body>
-</html>
+    <%- include('./partials/navbar.ejs') %>
+    
+    <div class="container mt-4">
+        <h1><%= heading %></h1>
+        <p>Example lng ni</p>
+    </div>
+
+<%- include('./partials/footer.ejs') %>

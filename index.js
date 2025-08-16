@@ -8,15 +8,9 @@ app.listen(port, () => {
 });
 
 app.set('view engine', 'ejs');
+app.set('views', './views');
+app.use('/assets', express.static('assets'));
 
 app.get('/', (req, res) => {
-  res.render('index', { heading: 'Welcome to the Home Page'});
-});
-
-app.get('/about', (req, res) => {
-  res.render('about', { heading: 'About Us', students: mymodule.students, helloMessage: mymodule.hello });
-});
-
-app.get('/error', (req, res) => {
-  res.render('error', { heading: 'Error Page', message: 'An error has occurred!' });
+  res.render('index', { heading: 'Home Page'});
 });
