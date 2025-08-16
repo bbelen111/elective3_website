@@ -9,7 +9,7 @@ app.listen(port, () => {
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
-app.use('/assets', express.static('assets'));
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
   res.render('index', { heading: 'Home Page'});
