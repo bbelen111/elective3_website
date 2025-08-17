@@ -12,25 +12,25 @@ app.set('views', './views');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.render('index', { heading: 'Home Page'});
+  res.render('index', { heading: 'Home' });
 });
 
 app.get('/inventory', (req, res) => {
-  res.render('inventory', { heading: 'Inventory'});
+  res.render('inventory', { heading: 'Inventory' });
 });
 
 app.get('/about', (req, res) => {
-  res.render('about', { heading: 'About Page'});
+  res.render('about', { heading: 'About' });
 });
 
 app.get('/contact', (req, res) => {
-  res.render('contact', { heading: 'Contact Page'});
+  res.render('contact', { heading: 'Contact'});
 });
 
 app.get('/login', (req, res) => {
-  res.render('login', { heading: 'Login Page'});
+  res.render('login', { heading: 'Login' });
 });
 
 app.get('/register', (req, res) => {
-  res.render('register', { heading: 'Register Page'});
+  res.render('register', { heading: 'Register' });
 });

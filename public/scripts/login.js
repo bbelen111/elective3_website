@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   // forget password modal
   document.querySelector("a[href='#forgot']").addEventListener("click", (e) => {
     e.preventDefault();
@@ -42,4 +43,5 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "/";
     }, 2000);
   });
+  
 });
