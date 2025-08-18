@@ -7,8 +7,384 @@
     <%- include('./partials/navbar.ejs') %>
     
     <div class="container mt-4">
-        <h1><%= heading %></h1>
-        <p>Example lng ni</p>
+        <div class="inventory-header">
+            <h1 class="page-title"><%= heading %></h1>
+            <p class="page-subtitle">Current inventory of premium seeds and fertilizers</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All Products</button>
+            <button class="filter-btn" data-filter="seeds">Seeds</button>
+            <button class="filter-btn" data-filter="fertilizers">Fertilizers</button>
+            <button class="filter-btn" data-filter="coming-soon">Coming Soon</button>
+        </div>
+
+        <!-- Seeds Section -->
+        <section class="inventory-section">
+            <h2 class="section-heading">Seeds</h2>
+            <div class="products-grid">
+                
+                <!-- Fruit Seeds -->
+                <div class="product-card" data-category="seeds">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <span class="stock-badge in-stock">In Stock</span>
+                    </div>
+                    <h3 class="product-name">Mango Seeds</h3>
+                    <p class="product-variety">Carabao & Indian varieties</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 150 packs</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱45.00/pack</div>
+                </div>
+
+                <div class="product-card" data-category="seeds">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-lemon"></i>
+                        </div>
+                        <span class="stock-badge in-stock">In Stock</span>
+                    </div>
+                    <h3 class="product-name">Calamansi Seeds</h3>
+                    <p class="product-variety">Premium Philippine citrus</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 89 packs</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱35.00/pack</div>
+                </div>
+
+                <div class="product-card" data-category="seeds">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <span class="stock-badge low-stock">Low Stock</span>
+                    </div>
+                    <h3 class="product-name">Papaya Seeds</h3>
+                    <p class="product-variety">Sweet & Red Lady varieties</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 12 packs</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱40.00/pack</div>
+                </div>
+
+                <div class="product-card" data-category="seeds">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <span class="stock-badge in-stock">In Stock</span>
+                    </div>
+                    <h3 class="product-name">Guava Seeds</h3>
+                    <p class="product-variety">Pink & white flesh types</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 76 packs</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱38.00/pack</div>
+                </div>
+
+                <div class="product-card" data-category="seeds">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <span class="stock-badge in-stock">In Stock</span>
+                    </div>
+                    <h3 class="product-name">Rambutan Seeds</h3>
+                    <p class="product-variety">Sweet tropical variety</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 63 packs</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱42.00/pack</div>
+                </div>
+
+                <div class="product-card" data-category="seeds">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <span class="stock-badge in-stock">In Stock</span>
+                    </div>
+                    <h3 class="product-name">Banana Seeds</h3>
+                    <p class="product-variety">Saba & Lakatan varieties</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 95 packs</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱32.00/pack</div>
+                </div>
+
+                <!-- Vegetable Seeds -->
+                <div class="product-card" data-category="seeds">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-carrot"></i>
+                        </div>
+                        <span class="stock-badge in-stock">In Stock</span>
+                    </div>
+                    <h3 class="product-name">Kangkong Seeds</h3>
+                    <p class="product-variety">Water spinach variety</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 200 packs</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱25.00/pack</div>
+                </div>
+
+                <div class="product-card" data-category="seeds">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <span class="stock-badge out-of-stock">Out of Stock</span>
+                    </div>
+                    <h3 class="product-name">Ampalaya Seeds</h3>
+                    <p class="product-variety">Bitter gourd variety</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 0 packs</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱30.00/pack</div>
+                </div>
+
+                <div class="product-card" data-category="seeds">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <span class="stock-badge in-stock">In Stock</span>
+                    </div>
+                    <h3 class="product-name">Sitaw Seeds</h3>
+                    <p class="product-variety">Long bean variety</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 118 packs</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱26.00/pack</div>
+                </div>
+
+                <div class="product-card" data-category="seeds">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <span class="stock-badge in-stock">In Stock</span>
+                    </div>
+                    <h3 class="product-name">Pechay Seeds</h3>
+                    <p class="product-variety">Chinese cabbage</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 134 packs</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱20.00/pack</div>
+                </div>
+
+                <div class="product-card" data-category="seeds">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <span class="stock-badge low-stock">Low Stock</span>
+                    </div>
+                    <h3 class="product-name">Sili Seeds</h3>
+                    <p class="product-variety">Hot pepper varieties</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 8 packs</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱28.00/pack</div>
+                </div>
+
+                <div class="product-card" data-category="seeds">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <span class="stock-badge in-stock">In Stock</span>
+                    </div>
+                    <h3 class="product-name">Kamote Seeds</h3>
+                    <p class="product-variety">Sweet potato varieties</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 87 packs</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱24.00/pack</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Fertilizers Section -->
+        <section class="inventory-section">
+            <h2 class="section-heading">Fertilizers</h2>
+            <div class="products-grid">
+                
+                <div class="product-card" data-category="fertilizers">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <span class="stock-badge in-stock">In Stock</span>
+                    </div>
+                    <h3 class="product-name">Organic Compost</h3>
+                    <p class="product-variety">Premium organic blend</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 45 bags</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱150.00/bag</div>
+                </div>
+
+                <div class="product-card" data-category="fertilizers">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <span class="stock-badge in-stock">In Stock</span>
+                    </div>
+                    <h3 class="product-name">Liquid Fertilizer</h3>
+                    <p class="product-variety">NPK 14-14-14</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 67 bottles</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱85.00/bottle</div>
+                </div>
+
+                <div class="product-card" data-category="fertilizers">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <span class="stock-badge low-stock">Low Stock</span>
+                    </div>
+                    <h3 class="product-name">Root Booster</h3>
+                    <p class="product-variety">Enhanced root development</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 15 packs</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱120.00/pack</div>
+                </div>
+
+                <div class="product-card" data-category="fertilizers">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <span class="stock-badge in-stock">In Stock</span>
+                    </div>
+                    <h3 class="product-name">Foliar Spray</h3>
+                    <p class="product-variety">Micronutrient supplement</p>
+                    <div class="stock-info">
+                        <p class="stock-count"><strong>Stock:</strong> 92 bottles</p>
+                        <p class="next-stock">Next restock: <span>Next month</span></p>
+                    </div>
+                    <div class="product-price">₱65.00/bottle</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Coming Soon Section -->
+        <section class="inventory-section">
+            <h2 class="section-heading">Coming Soon</h2>
+            <div class="products-grid">
+                
+                <div class="product-card coming-soon-card" data-category="coming-soon">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <span class="coming-soon-badge">Coming Soon</span>
+                    </div>
+                    <h3 class="product-name">Dragon Fruit Seeds</h3>
+                    <p class="product-variety">White & red flesh varieties</p>
+                    <div class="stock-info">
+                        <p class="expected-arrival">Expected arrival: <span>Next month</span></p>
+                        <p class="pre-order">Pre-order available</p>
+                    </div>
+                    <div class="product-price">₱55.00/pack</div>
+                </div>
+
+                <div class="product-card coming-soon-card" data-category="coming-soon">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <span class="coming-soon-badge">Coming Soon</span>
+                    </div>
+                    <h3 class="product-name">Passion Fruit Seeds</h3>
+                    <p class="product-variety">Purple passion fruit</p>
+                    <div class="stock-info">
+                        <p class="expected-arrival">Expected arrival: <span>Next month</span></p>
+                        <p class="pre-order">Pre-order available</p>
+                    </div>
+                    <div class="product-price">₱48.00/pack</div>
+                </div>
+
+                <div class="product-card coming-soon-card" data-category="coming-soon">
+                    <div class="card-header">
+                        <div class="product-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <span class="coming-soon-badge">Coming Soon</span>
+                    </div>
+                    <h3 class="product-name">Bio Fertilizer</h3>
+                    <p class="product-variety">Advanced microbial blend</p>
+                    <div class="stock-info">
+                        <p class="expected-arrival">Expected arrival: <span>Next month</span></p>
+                        <p class="pre-order">Pre-order available</p>
+                    </div>
+                    <div class="product-price">₱180.00/bag</div>
+                </div>
+
+            </div>
+        </section>
+
     </div>
 
-<%- include('./partials/footer.ejs') %>
+    <%- include('./partials/footer.ejs') %>
+
+    <script>
+        // Simple filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    productCards.forEach(card => {
+                        if (filter === 'all') {
+                            card.style.display = 'block';
+                        } else {
+                            const category = card.getAttribute('data-category');
+                            if (category === filter) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
