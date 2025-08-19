@@ -38,6 +38,16 @@
                     to embrace technology and eco-friendly practices.
                 </p>
             </div>
+            <div class="border border-success rounded p-4 mb-4 border-4">
+                <h3>Group Members</h3>
+                <p class="fs-4">
+                    <ul class="list-unstyled text-center fs-4">
+                        <% groupmembers.forEach(function(member) { %>
+                          <li><%= member %></li>
+                        <% }); %>
+                    </ul>
+                </p>
+            </div>
         </div>
     </div>
 

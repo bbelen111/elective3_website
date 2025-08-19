@@ -20,7 +20,7 @@ app.get('/inventory', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-  res.render('about', { heading: 'About' });
+  res.render('about', { heading: 'About', groupmembers: mymodule.groupmembers });
 });
 
 app.get('/contact', (req, res) => {
