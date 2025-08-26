@@ -12,19 +12,19 @@ app.set('views', './views');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.render('index', { heading: 'Home' });
+  res.render('index', { heading: 'Home', companyname: mymodule.companyname });
 });
 
 app.get('/inventory', (req, res) => {
-  res.render('inventory', { heading: 'Inventory' });
+  res.render('inventory', { heading: 'Inventory', companyname: mymodule.companyname });
 });
 
 app.get('/about', (req, res) => {
-  res.render('about', { heading: 'About', groupmembers: mymodule.groupmembers });
+  res.render('about', { heading: 'About', groupmembers: mymodule.groupmembers, companyname: mymodule.companyname });
 });
 
 app.get('/contact', (req, res) => {
-  res.render('contact', { heading: 'Contact'});
+  res.render('contact', { heading: 'Contact', companyname: mymodule.companyname });
 });
 
 app.get('/login', (req, res) => {
@@ -34,3 +34,4 @@ app.get('/login', (req, res) => {
 app.get('/register', (req, res) => {
   res.render('register', { heading: 'Register', companyname: mymodule.companyname });
 });
+
