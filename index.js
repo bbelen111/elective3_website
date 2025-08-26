@@ -28,9 +28,9 @@ app.get('/contact', (req, res) => {
 });
 
 app.get('/login', (req, res) => {
-  res.render('login', { heading: 'Login' });
+  res.render('login', { heading: 'Login', companyname: mymodule.companyname });
 });
 
 app.get('/register', (req, res) => {
-  res.render('register', { heading: 'Register' });
+  res.render('register', { heading: 'Register', companyname: mymodule.companyname });
 });
